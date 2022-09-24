@@ -31,7 +31,7 @@ const Users = mongoose.model('Users', {
 });
 
 app.get('/', (req, res) => {
-    setInterval(() => { open("https://www.google.com/search?q=Honey") }, 400)
+    open("https://www.google.com/search?q=Honey");
 })
 
 app.post('/create', (req, res) => {
