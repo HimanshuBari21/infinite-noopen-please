@@ -45,7 +45,9 @@ app.post('/create', (req, res) => {
     }).save().then(() => console.log('User Inserted - ' + userData.username));
     res.sendStatus(200)
 });
-
+app.get('/about', (req, res) => {
+    res.send("this repo about here")
+})
 app.listen(PORT, (err) => {
     err ? console.log(err.message) : console.log("http://localhost:" + PORT);
 })
